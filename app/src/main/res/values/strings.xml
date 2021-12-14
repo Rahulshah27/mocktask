@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mocktask</string>
+    <string name="notifications">Notifications</string>
+    <string name="newtxt">New</string>
+    <string name="earlier">Earlier</string>
+    <string name="t_details">It has been 2 weeks since yo u finished your previous module!</string>
+    <string name="n_title">Next module awaits!</string>
+    <string name="n_time">13 min ago</string>
+</resources>
