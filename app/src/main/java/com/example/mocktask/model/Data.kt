@@ -5,6 +5,6 @@ data class NotificationModel(
     val nTitle: String,
     val nDetail: String?=null,
     val nTime: String?=null,
-    val new : Boolean = false,
-    val type : Int = 1
+    val nNew : Boolean = false,
+    val nType : Int = 1
 )

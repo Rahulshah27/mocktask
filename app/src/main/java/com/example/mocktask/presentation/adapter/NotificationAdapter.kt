@@ -41,7 +41,7 @@ class NotificationAdapter(private val notifications: List<NotificationModel>):
             tvDetails.text = notifications.nDetail
             tvTime.text = notifications.nTime
 
-            if (notifications.new) {
+            if (notifications.nNew) {
                 layout.setBackgroundColor(ContextCompat.getColor(itemView.context,R.color.purple_200))
             }
             else layout.setBackgroundColor(ContextCompat.getColor(itemView.context,R.color.white))
@@ -65,7 +65,7 @@ class NotificationAdapter(private val notifications: List<NotificationModel>):
 
     override fun getItemCount() = notifications.size
 
-    override fun getItemViewType(position: Int) = notifications?.get(position)?.type!!
+    override fun getItemViewType(position: Int) = notifications?.get(position)?.nType!!
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when (holder) {

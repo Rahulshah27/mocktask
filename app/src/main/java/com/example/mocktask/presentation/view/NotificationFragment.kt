@@ -14,23 +14,23 @@ class NotificationFragment: Fragment(R.layout.notification_fragment) {
 
     private var notificationAdapter = NotificationAdapter(
         listOf(
-            NotificationModel(nTitle = "New",type = 1),
-            NotificationModel(nImg = R.drawable.img,type = 0,nTitle =  "Next Module awaits!",
-                nDetail =  "it has been 2 weeks since you finshed your previous work!",nTime =  "12 Minutes ago",new = true),
-            NotificationModel(nImg = R.drawable.img,type = 0,nTitle =  "Next Module awaits!",
-                nDetail =  "it has been 2 weeks since you finshed your previous work!",nTime =  "12 Minutes ago"),
-            NotificationModel(nImg = R.drawable.img,type = 0,nTitle =  "Next Module awaits!",
-                nDetail =  "it has been 2 weeks since you finshed your previous work!",nTime =  "12 Minutes ago"),
-            NotificationModel(nTitle = "Earlier",type = 1),
-            NotificationModel(nImg = R.drawable.img,type = 0,nTitle =  "Next Module awaits! 2",
+            NotificationModel(nTitle = "New",nType = 1),
+            NotificationModel(nImg = R.drawable.img,nType = 0,nTitle =  "Next Module awaits!",
+                nDetail =  "it has been 2 weeks since you finshed your previous work!",nTime =  "12 Minutes ago",nNew = true),
+            NotificationModel(nImg = R.drawable.img,nType = 0,nTitle =  "Next Module awaits!",
+                nDetail =  "it has been 2 weeks since you finshed your previous work!",nTime =  "12 Minutes ago", nNew = true),
+            NotificationModel(nImg = R.drawable.img,nType = 0,nTitle =  "Next Module awaits!",
+                nDetail =  "it has been 2 weeks since you finshed your previous work!",nTime =  "12 Minutes ago", nNew = true),
+            NotificationModel(nTitle = "Earlier",nType = 1),
+            NotificationModel(nImg = R.drawable.img,nType = 0,nTitle =  "Next Module awaits! 2",
                 nDetail =  "it has been months since you finshed your previous work!",nTime =  "30 Minutes ago"),
-            NotificationModel(nImg = R.drawable.img,type = 0,nTitle =  "Next Module awaits! 2",
+            NotificationModel(nImg = R.drawable.img,nType = 0,nTitle =  "Next Module awaits! 2",
                 nDetail =  "it has been months since you finshed your previous work!",nTime =  "30 Minutes ago"),
-            NotificationModel(nImg = R.drawable.img,type = 0,nTitle =  "Next Module awaits! 2",
+            NotificationModel(nImg = R.drawable.img,nType = 0,nTitle =  "Next Module awaits! 2",
                 nDetail =  "it has been months since you finshed your previous work!",nTime =  "30 Minutes ago"),
-            NotificationModel(nImg = R.drawable.img,type = 0,nTitle =  "Next Module awaits! 2",
+            NotificationModel(nImg = R.drawable.img,nType = 0,nTitle =  "Next Module awaits! 2",
                 nDetail =  "it has been months since you finshed your previous work!",nTime =  "30 Minutes ago"),
-            NotificationModel(nImg = R.drawable.img,type = 0,nTitle =  "Next Module awaits! 2",
+            NotificationModel(nImg = R.drawable.img,nType = 0,nTitle =  "Next Module awaits! 2",
                 nDetail =  "it has been months since you finshed your previous work!",nTime =  "30 Minutes ago")
         )
     )
