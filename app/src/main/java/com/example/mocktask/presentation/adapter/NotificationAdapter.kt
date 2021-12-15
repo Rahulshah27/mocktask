@@ -21,13 +21,14 @@ class NotificationAdapter(private val notifications: List<NotificationModel>):
         private val headerTitle = view.findViewById<TextView>(R.id.tv_head)
         fun bind(notifications: NotificationModel) {
             headerTitle.text = notifications.nTitle
-
         }
     }
 
 
     inner class NotificationVH(view: View) :
         RecyclerView.ViewHolder((view)) {
+
+        private val layout = view.findViewById<ConstraintLayout>(R.id.layoutNotify)
 
         private val ivImg = view.findViewById<ImageView>(R.id.iv_img)
         private val tvTitle = view.findViewById<TextView>(R.id.tv_title)
@@ -40,7 +41,10 @@ class NotificationAdapter(private val notifications: List<NotificationModel>):
             tvDetails.text = notifications.nDetail
             tvTime.text = notifications.nTime
 
-
+            if (notifications.new) {
+                layout.setBackgroundColor(ContextCompat.getColor(itemView.context,R.color.purple_200))
+            }
+            else layout.setBackgroundColor(ContextCompat.getColor(itemView.context,R.color.white))
         }
     }
 
