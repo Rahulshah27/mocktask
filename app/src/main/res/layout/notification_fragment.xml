@@ -30,51 +30,15 @@
             android:layout_below="@+id/ll_featured_partners"
             android:background="#E0DAEC" />
 
-        <TextView
-            android:id="@+id/tv_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/view_1"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"
-            android:fontFamily="@font/poppins"
-            android:text="@string/newtxt"
-            android:textColor="@color/main_color"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_new"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_1"
-            tools:listitem="@layout/list_new_notification" />
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/view_1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
 
-                <TextView
-                    android:id="@+id/tv_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/rv_new"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="12dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="@string/earlier"
-                    android:textColor="@color/main_color"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_earlier"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/tv_2"
-                    tools:listitem="@layout/list_new_notification"/>
-
-
-
-
-    </RelativeLayout>
+         </RelativeLayout>
 
 </layout>

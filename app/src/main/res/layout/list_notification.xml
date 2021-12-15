@@ -3,8 +3,7 @@
 <layout>
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/newNotify"
-        android:background="#FCECFF"
+        android:id="@+id/layoutNotify"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -46,13 +45,24 @@
             android:id="@+id/tv_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
             android:text="@string/n_time"
             android:textSize="11sp"
             app:layout_constraintStart_toStartOf="@+id/tv_details"
             app:layout_constraintTop_toBottomOf="@+id/tv_details" />
 
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="#E0DAEC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_time" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
